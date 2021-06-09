@@ -129,6 +129,10 @@ a {
 .contact-list a:hover {
   color: var(--accent-color);
 }
+
+.icon {
+  fill: currentColor;
+}
 /* Header-styles */
 
 /* Main-styles */
