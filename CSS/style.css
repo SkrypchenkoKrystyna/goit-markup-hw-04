@@ -9,6 +9,7 @@
   --box-shadow-color: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px,
     1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --main-font: "Roboto", sans-serif;
+  --icon-color: #afb1b8;
   --accent-font: "Raleway", sans-serif;
 }
 *,
@@ -200,6 +201,15 @@ a {
 
 /* Hero */
 /* About-us */
+.about-us-icon-box {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: var(--background-color);
+}
 .about-us-list {
   display: flex;
 }
@@ -321,7 +331,48 @@ a {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+
+.social-media-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-link {
+  width: 4px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.team-social-link {
+  color: var(--icon-color);
+}
 /* Our-team */
+
+/* Client-section */
+
+.client-section {
+  padding: 94px 0;
+  margin: 0 auto;
+}
+
+.title-client {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+.card-list > .client-item-position:not(:last-child) {
+  margin-right: 30px;
+}
+.client-item-calc {
+  flex-basis: calc((100% - 6 * 30px)) / 6;
+}
+
+/* Client-section */
 
 /* contacts-footer */
 
