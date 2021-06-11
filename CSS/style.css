@@ -51,7 +51,6 @@ a {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  /* outline: 2px solid tomato; */
 }
 
 /* logotype */
@@ -333,22 +332,34 @@ a {
 }
 
 .social-media-list {
+  margin-top: 16px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
-
-.social-link {
-  width: 4px;
+.social-media-list li:not(:last-child) {
+  margin-right: 10px;
+}
+.social-media-list li {
+  width: 44px;
   height: 44px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
 }
 
-.team-social-link {
-  color: var(--icon-color);
+.social-icon-team {
+  fill: var(--icon-color);
 }
+
+.social-media-list li:hover {
+  background-color: var(--accent-color);
+}
+
+.social-icon-team:hover {
+  fill: var(--white-color);
+}
+
 /* Our-team */
 
 /* Client-section */
