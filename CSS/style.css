@@ -46,6 +46,7 @@ a {
 /* Header-styles */
 .header {
   color: var(--main-text-color);
+  border-bottom: 1px solid #ececec;
 }
 .container {
   width: 1200px;
@@ -335,18 +336,19 @@ a {
   font-size: 16px;
   line-height: 1.187;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
   color: var(--title-text-color);
 }
 
 .social-media-list {
-  margin-top: 16px;
   display: flex;
   justify-content: center;
 }
 .social-media-list li:not(:last-child) {
   margin-right: 10px;
 }
-.social-media-list li {
+
+.social-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -355,17 +357,49 @@ a {
   align-items: center;
 }
 
-.social-icon-team {
+.social-link {
   fill: var(--icon-color);
 }
 
-.social-media-list li:hover {
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+}
+
+/* третий вариант НЕ ВаРиант */
+/* .social-link {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.social-link:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+} */
+
+/* Второй вариант не подошел */
+
+/* .icon-hover:hover,
+.icon-hover:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon-team,
+.social-link:focus .social-icon-team {
+  fill: var(--white-color);
+} */
+
+/* Первый вариант не подошел */
+
+/* .social-media-list li:hover {
   background-color: var(--accent-color);
 }
 
 .social-icon-team:hover {
   fill: var(--white-color);
-}
+} */
+
 .sm-link-footer {
   color: inherit;
   background-color: rgba(255, 255, 255, 0.1);
@@ -422,15 +456,15 @@ a {
   max-width: 100%;
   fill: currentColor;
 }
-.client-icon:hover,
-.client-icon:focus {
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--accent-color);
 }
 
 .client-link:hover,
 .client-link:focus {
-  transition-property: border, color;
-  border: 1px solid var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* Client-section */
