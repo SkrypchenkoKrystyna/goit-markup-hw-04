@@ -6,8 +6,8 @@
   --white-color: #ffffff;
   --back-color: #2f303a;
   --background-color: #f5f4fa;
-  --box-shadow-color: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px,
-    1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --box-shadow-color: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --main-font: "Roboto", sans-serif;
   --icon-color: #afb1b8;
   --accent-font: "Raleway", sans-serif;
@@ -202,6 +202,7 @@ a {
 }
 
 /* Hero */
+
 /* About-us */
 .about-us-icon-box {
   width: 270px;
@@ -442,7 +443,7 @@ a {
   background-color: var(--back-color);
 }
 .footer-section {
-  padding: 94px 0;
+  /* padding: 94px 0; */
   margin: 0 auto;
 }
 
@@ -455,8 +456,12 @@ a {
 }
 .logo-footer {
   display: inline-block;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   margin-bottom: 20px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.174;
 }
 
 .logo-footer-portfolio {
@@ -522,12 +527,6 @@ a {
 
 /* Header-stiles-portfolio-copy-from-main*/
 
-/* Button-list */
-/* .button-position {
-  display: inline-block;
-  display: flex;
-} */
-
 .button-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -573,6 +572,8 @@ a {
   background-color: var(--accent-color);
   color: var(--white-color);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+    0px 2px 2px rgb(0 0 0 / 12%);
 }
 
 .button-list:hover,
@@ -580,6 +581,8 @@ a {
   background-color: var(--accent-color);
   color: var(--white-color);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+    0px 2px 2px rgb(0 0 0 / 12%);
 }
 /* Button-list */
 
@@ -605,8 +608,8 @@ a {
   flex-direction: column;
 }
 
-.card-link:hover {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px, 1px rgba(0, 0, 0, 0.14),
+.card-item:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
